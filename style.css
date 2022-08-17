@@ -23,7 +23,7 @@
 .my-color{
     color:rgb(0, 190, 180) ;
 }
-button:hover , a:hover{
+button:hover , li>a:hover{
     background-color: rgba(27, 240, 229, 0.89) !important;
     color: black;
 }
@@ -58,6 +58,13 @@ button:hover , a:hover{
 }
 #info-panel div{
     text-align: left;
+}
+.carousel-caption  p{
+    background-color: #444;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 2px 5px;
+    border-radius: 0.35rem;
 }/*
 .carousel-item{
     display: flex !important;

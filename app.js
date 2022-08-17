@@ -332,7 +332,7 @@ function returnthesedivs() {
   setTimeout(function(){
   document.getElementById("mobile-image").src =        output_obj.image;
   document.getElementById("mobile-name").innerHTML =   output_obj.name;
-  document.getElementById("mobile-price").innerHTML =  output_obj.price;
+  document.getElementById("mobile-price").innerHTML =  "PKR "+output_obj.price;
   document.getElementById("brand-name").innerHTML  =    output_obj.brand;
   document.getElementById("colors").innerHTML =        output_obj.colors;
   document.getElementById("network-tech").innerHTML =  output_obj.Network_Tech;
