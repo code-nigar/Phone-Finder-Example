@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Phone</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9b85e336b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand mx-2 fs-4 fw-bold" href="#"
+            ><i class="fa-solid fa-magnifying-glass my-color"></i> Phone Finder
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!--carouslel-->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Find Whats hot</h5>
+            <p>We have collection of latest mobiles available.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://www.phoneworld.com.pk/wp-content/uploads/2022/03/5-2-1024x650.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block float-end">
+            <h5>Know What you are missing</h5>
+            <p>Discover exciting deals available now.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/12/Editing-on-Smartphone.jpg?w=750"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block float-end">
+            <h5>Become a tech savy</h5>
+            <p>Compare phones and find the best one.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- content -->
+    <div id="container">
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-light my-color dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Search phones
+        </button>
+        <ul class="dropdown-menu">
+          <li
+            class="button-item-categorie dropdown-item"
+            id="di1"
+            onmouseover="showCollapseditem(this.id)"
+            onmouseout="hideCollapsedItem(this.id)"
+          >
+            iphone
+            <ul class="collapse-items" id="ci1">
+              <li>
+                <a href="#" onclick="selection('iphone','iphonex');"
+                  >iphone X</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('iphone','iphone_11_pro');"
+                  >iphone 11 pro</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('iphone','iphone_12_pro');"
+                  >iphone 12 pro</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('iphone','iphone_13_pro');"
+                  >iphone 13 pro</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="button-item-categorie dropdown-item"
+            id="di2"
+            onmouseover="showCollapseditem(this.id)"
+            onmouseout="hideCollapsedItem(this.id)"
+          >
+            samsung
+            <ul class="collapse-items" id="ci2">
+              <li>
+                <a href="#" onclick="selection('samsung','sam_gal_note_5');"
+                  >samsung Galaxy Note 5</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('samsung','sam_gal_s7');"
+                  >Samsung Galaxy s7</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('samsung','sam_fold');"
+                  >Samsung Galaxy fold</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li
+            class="button-item-categorie dropdown-item"
+            id="di3"
+            onmouseover="showCollapseditem(this.id)"
+            onmouseout="hideCollapsedItem(this.id)"
+          >
+            moto
+            <ul class="collapse-items" id="ci3">
+              <li>
+                <a href="#" onclick="selection('moto','moto_droid_z');"
+                  >Motorola Droid Z</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="selection('moto','moto_e6');"
+                  >Motorola E6</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Output On Click-->
+    <div id="output-div">
+      <div id="side-header" class="py-2">
+        <img id="mobile-image"></img>
+        <div id="mobile-name" class="fs-3 fw-bold">SELECT PHONE FOR DESCRIPTION</div>
+        <div id="mobile-price" class="fs-4"></div>
+      </div>
+      <div id="info-panel"> 
+        <div class="description-item"><span>BRAND: </span><div id="brand-name"></div></div>
+        <div class="description-item"><span>COLORS: </span><div id="colors"></div></div>
+        <div class="description-item"><span>NETWORK-SUPPORT: </span><div id="network-tech"></div></div>
+        <div class="description-item"><span>OPERATING SYSTEM: </span><div id="operating-sys"></div></div>
+        <div class="description-item"><span>DIMENSIONS: </span><div id="dimension"></div></div>
+        <div class="description-item"><span>WEIGHT: </span><div id="weight"></div></div>
+        <div id="display" class="sub-info-category">
+          <div class="description-item"><span>SCREEN-SIZE: </span><div id="screen-size"></div></div>
+          <div class="description-item"><span>SCREEN-RESOLUTION: </span><div id="screen-resolution"></div></div>
+        </div>
+        <div id="storage" class="sub-info-category">
+          <div class="description-item"><span>ROM: </span><div id="internal-memory"></div></div>
+          <div class="description-item"><span>RAM: </span><div id="RAM"></div></div>
+          <div class="description-item"><span>CARD-SLOT: </span><div id="card-slot"></div></div>
+        </div>
+        <div id="camera" class="sub-info-cateegory">
+          <div class="description-item"><span>FRONT-CAMERA: </span><div id="front-camera"></div></div>
+          <div class="description-item"><span>REAR-CAMERA: </span><div id="rear-camera"></div></div>
+        </div>
+        <div id="performance" class="sub-info-category">
+          <div class="description-item"><span>CPU: </span><div id="CPU"></div></div>
+          <div class="description-item"><span>GPU: </span><div id="GPU"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

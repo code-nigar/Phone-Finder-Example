@@ -1,0 +1,90 @@
+.collapse-items{
+    display: none;
+}
+.carousel-caption p, h5{
+    color: white;
+}
+.carousel-caption h5{
+    font-size: 2.5rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px
+}
+.my-color{
+    color:rgb(0, 190, 180) ;
+}
+button:hover , a:hover{
+    background-color: rgba(27, 240, 229, 0.89) !important;
+    color: black;
+}
+
+#output-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    padding: 5px;
+
+}
+#side-header,#info-panel{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+#side-header{
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+#mobile-image{
+    width: 350px;
+}
+#info-panel{
+    padding: 0.75rem;
+    border: 1px solid #444;
+    border-radius: 0.75rem;
+}
+#info-panel div{
+    text-align: left;
+}/*
+.carousel-item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 75vh;
+}
+.carousel-item img{
+    flex-shrink: 0 !important;
+    min-width: 100% !important;
+    min-height: 100 !important;
+}
+
+*/
+.carousel-item{
+    height: 70vh;
+}
+.carousel-item img{
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+}
+span{
+    color: teal;
+    letter-spacing: 0.075rem;
+}
+.description-item div{
+    display: inline;
+}
